@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight");
+@import url("https://fonts.googleapis.com/css?family=Trirong");
+body {
+  font-family: "Indie Flower", cursive;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/seamless_paper_texture.png);
+}
+
+.scrapbook {
+  width: 590px;
+  height: 790px;
+}
+
+.l {
+  border-top-left-radius: 80px 5px;
+  border-bottom-left-radius: 80px 5px;
+}
+
+.r {
+  border-top-right-radius: 80px 5px;
+  border-bottom-right-radius: 80px 5px;
+}
+
+.hard {
+  font-size: 150%;
+  font-family: "Zilla Slab Highlight", cursive;
+  /* color: rgb(0, 121, 208) !important;  */
+  box-shadow: 0 0 10px #999;
+  border-top-left-radius: 0px !important;
+  background-color: red !important;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/black_paper.png) !important;
+  text-align: center;
+  color: white;
+  height: 610px;
+ 
+}
+
+.hard h1 {
+  font-size: 50px;
+  color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(228, 228, 228, 0.428);
+}
+
+.hard h2 {
+  font-size: 30px;
+  color: rgba(0,0,0,0.6);
+    text-shadow: 2px 2px 3px rgba(128, 221, 247, 0.428);
+}
+
+.hard h4 {
+  font-family: "Indie Flower", cursive;
+  color: white;
+  
+}
+
+#magazine {
+  margin: auto;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/seamless_paper_texture.png) !important;
+}
+#magazine .page {
+  z-index: 1000 !important;
+  background-color: grey;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/linedpaper.png);
+  border: solid 1px grey;
+}
+#magazine .page .top-margin {
+  height: 14px;
+}
+#magazine .page p {
+  margin: 0px;
+  margin-top: 1px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+ #magazine  .l p:nth-child(3n+0) {
+   color: red;
+}
+
+#magazine  .l p:nth-child(3n-2) {
+    color: rgb(2, 111, 12);
+ }
+
+ #magazine  .l p:nth-child(3n-1) {
+    color: rgb(98, 3, 85);
+ }
+
+
+ 
+ #magazine  .r p:nth-child(3n+0) {
+    color: rgb(0, 5, 108);
+ }
+
+ #magazine  .r p:nth-child(3n-1) {
+    color: rgb(209, 110, 4);
+ }
+ #magazine  .r p:nth-child(3n-2) {
+    color: rgb(141, 144, 0);
+ }
+
+
+
+#magazine .turn-page {
+  background-color: #ccc;
+}
+
+#magazine .shadow {
+  position: relative;
+  box-shadow: 0 4px 10px #666;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/black_paper.png);
+  z-index: -1000 !important;
+}
+
+.image-one {
+  width: 300px;
+  height: 199px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/AwardsSmall.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 4px grey;
+  transform: skew(5deg, -5deg);
+}
+
+.doodle {
+  margin-left: 18px;
+  color: grey;
+  font-size: 80%;
+  transform: skew(35deg, -35deg);
+}
+
+.centered {
+  color: blue;
+  margin-left: 20px;
+  transform: skew(5deg, -5deg);
+}
+
+.networking {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/Networking.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 510px;
+  right: 48px;
+  height: 390px;
+  border: solid 15px white;
+  box-shadow: 0 4px 10px lightgrey;
+  transform: skew(3deg, -3deg);
+}
+.networking:after {
+  content: "A bit of networking before the ceremony!";
+  left: 20%;
+  bottom: 0px;
+  position: absolute;
+  color: blue;
+}
+
+.vote-for-me {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/Vote.PNG);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 910px;
+  right: 48px;
+  height: 390px;
+}
+
+.reading-award {
+  position: absolute;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/ReadingAward.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: 48px;
+  height: 390px;
+  top: 100px;
+  border: solid 15px white;
+  box-shadow: 0 4px 10px lightgrey;
+  width: 233px;
+  transform: skew(-7deg, 7deg);
+}
+
+.dan-marsh {
+  position: absolute;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/DanMarsh.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 330px;
+  width: 190px;
+  top: 100px;
+  left: 30px;
+  border: solid 15px white;
+  box-shadow: 0 4px 10px lightgrey;
+  transform: skew(7deg, -7deg);
+}
+
+.heart-rate {
+  position: absolute;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/HeartRate.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 140px;
+  border: solid 15px white;
+  box-shadow: 0 4px 10px lightgrey;
+  transform: skew(8deg, -8deg);
+  right: 30px;
+  bottom: 50px;
+}
+
+.recieving-award {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/JustMe.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 370px;
+  width: 570px;
+  border: solid 15px white;
+  box-shadow: 0 4px 10px lightgrey;
+}
+
+.london-bridge-postcard {
+  width: auto;
+  margin-left: 30px;
+  height: 250px;
+  background-image: url(https://bit.ly/3rICNF2);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: skew(-15deg, 15deg);
+}
+
+.glaziers-hall {
+  margin: 10px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 20px white;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 285px;
+  height: 200px;
+  background-image: url(https://images.static-collegedunia.com/public/college_data/images/appImage/1488542068c3.jpg?tr=c-force);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: skew(15deg, -15deg);
+}
+
+.red-marker {
+  color: #990000;
+  font-weight: bold;
+}
+
+.blue-marker {
+  color: blue;
+  font-weight: bold;
+}
+
+.skew-3 {
+  color: blue;
+  position: absolute;
+  bottom: 220px;
+  right: 250px;
+  transform: skew(-15deg, 15deg);
+}
+
+.skew-2 {
+  margin-left: 380px;
+  transform: skew(-15deg, 15deg);
+}
+
+.pencil-sketch-award {
+  position: absolute;
+  left: 150px;
+  top: 160px;
+  width: 300px;
+  height: 400px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/PencilSketchAward.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 1px lightgrey;
+  transform: skew(-4deg, 4deg);
+}
+.pencil-sketch-award:before {
+  width: 90px;
+  height: 25px;
+  opacity: 0.4;
+  left: -20px;
+  bottom: 0px;
+  position: absolute;
+  content: "";
+  background: DarkKhaki;
+  transform: skew(-45deg, 45deg);
+}
+.pencil-sketch-award:after {
+  width: 90px;
+  height: 25px;
+  opacity: 0.4;
+  right: -10px;
+  top: 16px;
+  position: absolute;
+  content: "";
+  background: DarkKhaki;
+  transform: skew(-45deg, 45deg);
+}
+
+.image-two {
+  position: absolute;
+  left: 60px;
+  width: 166px;
+  height: 250px;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/937765/30843299538_794fce528e_m.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 2px lightgrey;
+  transform: skew(-4deg, 4deg);
+}
+.image-two:after {
+  width: 100px;
+  height: 30px;
+  opacity: 0.7;
+  left: 97px;
+  top: 10px;
+  position: absolute;
+  content: "";
+  background: DarkKhaki;
+  transform: skew(-35deg, 35deg);
+}
